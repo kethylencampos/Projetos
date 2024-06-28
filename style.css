@@ -1,0 +1,785 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: #1e1e1e ;
+    height: 1000px;
+    font-family: montserrat;
+}
+
+.login {
+    display: flex;
+    background-image: url(images/BACKGROUND.png);
+}
+
+.login .imagemCara {
+    margin-left: -300px;
+    padding: 0;
+    position: relative;
+    bottom: 55px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    background-color: #191919;
+    height: 40px;
+    border-bottom:1px solid #383838;
+}
+
+.menu ul {
+    color: #ffffff;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 1;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: montserrat regular;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.menu ul li a:hover {
+    border-bottom: 3px solid #31FF8B;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.informations {
+    display: flexbox;
+    justify-content: center;
+    margin-left: 400px;
+    margin-top: 170px;
+}
+
+.informations .formulario {
+    z-index: 1000;
+}
+
+
+.informations img {
+    height: 40px;
+}
+
+.infos {
+    display: flexbox;
+    gap: 20px;
+    color: azure;
+    padding: 0;
+}
+
+.infos h1 {
+    font-size: 52px;
+    font-family: montserrat regular;
+}
+
+.infos p {
+    font-size: 24px;
+    font-family: montserrat;
+    margin-top: -19px;
+    margin-bottom: 41px;
+}
+
+#formulario {
+    display: flexbox;
+    z-index: 1;
+}
+
+#formulario input {
+    width: 500px;
+    height: 52px;
+    background-color: #0F0F0F;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #676767;
+    color: #ffffff;
+    text-align: center;
+    outline: 0;
+}
+
+#formulario input:focus {
+    border:1px solid #31FF8B;
+}
+
+#formulario input::placeholder {
+    text-align: center;
+    font-family: montserrat;
+    font-size: 18px;
+    
+}
+
+#formulario button {
+    width: 507px;
+    height: 56px;
+    border: none;
+    border-radius: 5px;
+    background-color: #31FF8B;
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#formulario .esquecer-senha {
+    color: #ffffff;
+    display: flex;
+    gap: 5px;
+    font-family: montserrat;
+    font-size: 14px;
+    margin-bottom: -12px;
+    align-items: center;
+}
+
+#formulario .esquecer-senha input {
+    width: 15px;
+}
+
+#formulario button:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+#textMatricula {
+    color: #ff7676;
+    position: relative;
+    bottom: 15px;
+    font-size: 13px;
+    display: none;
+}
+
+#textSenha {
+    color: #ff7676;
+    position: relative;
+    bottom: 15px;
+    font-size: 13px;
+    display: none;
+}
+
+.imagem {
+    position: relative;
+    right: 300px;
+    height: 676px;
+    margin-top: -56px;
+    display: flexbox;
+    z-index: -1;
+}
+
+#secao2 {
+    background-color: #ffffff;
+    text-align: center;
+    height: 1080px;
+}
+
+#secao2 h2 {
+    position: relative;
+    
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    margin-top: 344px;
+}
+
+.fundo {
+    height: 100%;
+}
+
+/* tela de cadastro*/
+
+#secao1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+.formCadastro {
+    margin-bottom:100px;
+    display: flexbox;
+    border: none;
+    background-color: #191919;
+    border-radius: 6px;
+    padding: 60px;
+}
+
+
+.formCadastro .campo-required {
+    width: 400px;
+    height: 42px;
+    background-color: #111111;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.campo-required:focus {
+    border: 1px solid #31FF8B;
+}
+
+.span-required {
+    color: #ff5151;
+    font-size: 11px;
+    font-weight: 500;
+    position: relative;
+    bottom: 10px;
+    display: none;
+}
+
+.formCadastro label {
+    color: #ffffff;
+    font-family: montserrat semibold;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.formCadastro .campo-required::placeholder {
+    text-align: left;
+    position: relative;
+    left: 12px;
+    font-family: montserrat;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.titulo {
+    color: #ffffff;
+    text-align: center;
+    font-family: montserrat regular;
+    font-size: 35px;
+    margin-top: 150px;
+    padding: 0;
+}
+
+.formCadastro .cadastrar {
+    width: 407px;
+    height: 46px;
+    border: none;
+    border-radius: 5px;
+    background-color: #31FF8B;
+    font-family: montserrat;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.formCadastro button:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.formCadastro .salvar {
+    color: #ffffff;
+    display: flex;
+    gap: 5px;
+    font-family: montserrat;
+    font-size: 12px;
+    margin-bottom: -12px;
+}
+
+/* tela Minha Conta*/
+.menuLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    background-color: #191919;
+    height: 40px;
+    border-bottom:1px solid #383838;
+}
+
+.menuLogin img {
+    width: 60px;
+    position: relative;
+    right: 400px;
+}
+
+.menuLogin input::placeholder {
+    position: relative;
+    left: 10px;
+    font-size: 10px;
+    font-family: montserrat;
+    
+}
+
+.menuLogin p {
+    color: #ffffff;
+    font-family: montserrat regular;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+.notificações img {
+    width: 25px;
+    position: relative;
+    left: 10px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    transition: 0.35s;
+    background-color: #161616;
+}
+
+.fotoPerfil {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.sidebar-header p {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.sidebar button {
+    height: 52px;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+}
+
+.sidebar button > div {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 48px;
+    padding: 0 16px 0 12px;
+    width: 100%;
+    line-height: 1;
+    transition: all 0.4s;
+}
+
+.sidebar button:hover > div {
+    background: #222222;
+    border-right: 3px solid #31FF8B;
+    padding-left: 4px;
+}
+
+.sidebar button i {
+    position: relative;
+    font-size: 24px;
+    transition: 0.2s;
+}
+
+.links {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0;
+    
+}
+
+.main {
+    margin-left: 300px;
+    margin-top: 130px;
+    overflow: hidden;
+}
+
+.main h2 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.main p {
+    color: #A1A1A1;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.form-profile {
+    margin-left: 300px;
+    display: flexbox;
+}
+
+.profile {
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.profile label {
+    color: #ffffff;
+}
+
+.upload {
+    display: flex;
+    width: 700px;
+}
+
+input[type='file']{
+    background-color: transparent;
+    border: none;
+    
+}
+
+.dadosPerfil { 
+    display: flex;
+    gap: 14px;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+.dadosPerfil input {
+    display: flex;
+    text-align: center;
+    background: #121212;
+    border: none;
+    border-radius: 2px;
+    width: 600px;
+    height: 40px;
+    margin-bottom: 14px;
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+.dadosPerfil label {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.dadosPerfil button {
+    width: 200px;
+    height: 40px;
+    background-color: #31FF8B;
+    border: none;
+    font-weight: 700;
+    font-family: montserrat;
+    margin-top: 15px;
+}
+
+.dadosPerfil button:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#logout-icon a {
+    color: #646464; 
+    font-weight: 600;
+}
+
+#logout-icon i {
+    color: #646464; 
+}
+
+/* Ajuste de tamanho dos icones na sidebar */
+@media (width < 920px) {
+    .sidebar {
+        width: 72px;
+    }
+
+    .sidebar button > span {
+        width: 50px;
+    }
+
+    .sidebar button > span > span {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .sidebar-header p {
+        opacity: 0;
+        visibility: 0;
+    }
+
+    .main {
+        margin-left: 150px;
+        margin-top: 100px;
+        transition: margin 0.4s;
+    }
+}
+
+/* Página de notas */
+.container {
+    margin-left: 300px;
+    margin-top: 38px;
+}
+
+.container input {
+    width: 500px;
+    height: 41px;
+    background-color: #242424;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    box-sizing: border-box;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.container select::placeholder {
+    position: relative;
+    left: 15px;
+    font-size: 13px;
+}
+
+.container select:hover {
+    cursor: pointer;
+}
+
+.dropDown {
+    width: 500px;
+    background-color: #252525;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 15px;
+    height: 90px;
+    overflow: auto;
+    color: #ffffff;
+    transition: 0.5s;
+    transform: translate(0px, -10px);
+    display: none;
+}
+
+::-webkit-scrollbar {
+    background-color: #383838;
+    width: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5b5b5b;
+    border-radius: 5px;
+}
+
+.item {
+    color: #ffffff;
+    font-size: 13px;
+    height: 30px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.item:hover{
+    background-color: #121212;
+    padding-left: 7px;
+    transition: 100ms;
+}
+
+#buscar {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #31FF8B;
+    font-family: montserrat;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 810px;
+    bottom: 40px;
+}
+
+#buscar:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+/* Página de percentual de faltas */
+#percentual {
+    display: flex;
+    gap: 30px;
+    color: #ffffff;
+    margin-left: 300px;
+    margin-bottom: -16px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+#percentual h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.detalhes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 300px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+}
+
+.custom-date-input[type="date"] {
+    background-color: rgb(87, 87, 87);
+    width: 200px;
+    height: 28px;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 200px; /* Ajuste conforme necessário */
+    box-sizing: border-box;
+    padding: 18px;
+    font-family: montserrat;
+    font-size: 12px;
+}
+
+.custom-date-input:focus {
+    border: 1px solid #5b5b5b;
+}
+
+.custom-date-input::placeholder {
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    left: 10px;
+}
+
+.custom-date-input::-webkit-inner-spin-button,
+.custom-date-input::-webkit-calendar-picker-indicator {
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.bolinhas {
+    display: flex;
+    gap: 10px;
+}
+
+.bolinhas div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-presenças {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #31FF8B;
+}
+
+.status-faltas {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff5151;
+}
+
+/* faltas */
+.estatisticas {
+    border-radius: 10px;
+    font-family: montserrat;
+    color: #e0e0e0;
+    width: 1000px;
+    margin-left: 300px;
+}
+
+.subject-item {
+    font-size: 17px;
+    font-weight: 400;
+    position: relative;
+    bottom: 10px;
+}
+
+.progress-bar-container {
+    width: 900px;
+    height: 4px;
+    background-color: #121212;
+    border-radius: 25px;
+    margin-top: -10px;
+    margin-top: -10px;
+}
+
+.progress-bar {
+    height: 4px;
+    width: 580px;
+    background-color: #31FF8B;
+    border-radius: 25px;
+    transition: width 0.5s;
+}
+
+.attendance-text {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #646464;
+}
+
+/* Página histórico */
+.semestres-list {
+    display: flex;
+    gap: 8px;
+    margin-top: 70px;
+}
+
+.semestre {
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+    font-family: montserrat;
+    font-weight: 500;
+    border: none;
+    background-color: rgb(87, 87, 87);
+    color: #ffffff;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.semestre:hover {
+    cursor: pointer;
+    background-color: #31FF8B;
+    color: #000;
+    font-weight: 700;
+    transition: background-color 1s;
+}
+
+.semestre:focus {
+    background-color: #31FF8B;
+    color: #000;
+    font-weight: 700;
+}
